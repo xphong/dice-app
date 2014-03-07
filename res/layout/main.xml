@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    >
+  
+    <TableLayout android:id="@+id/tableRow1" android:layout_height="wrap_content" android:layout_width="match_parent">
+   
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="125px"
+    >
+    <!-- title -->
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent">
+      <ImageView android:layout_height="125px" android:layout_width="480px" android:src="@drawable/title"></ImageView>
+    </TableRow>
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="wrap_content"
+    >
+    <!-- buttons -->
+    <TableRow android:layout_height="50px" android:layout_width="match_parent" android:gravity="center" android:layout_weight="1">
+    </TableRow> 
+    <TableRow android:layout_width="match_parent" android:gravity="center" android:layout_weight="1" android:layout_height="0dp">
+
+    <Button
+        android:id="@+id/butRoll1"
+        android:layout_width="111px"
+        android:layout_height="32px"
+        android:background="@drawable/button1" android:layout_weight="0.0" android:layout_marginLeft="15px" android:layout_marginRight="15px"/>
+            <Button
+        android:id="@+id/butRoll2"
+        android:layout_width="111px"
+        android:layout_height="32px"
+        android:background="@drawable/button2" android:layout_weight="0.0" android:layout_marginLeft="15px" android:layout_marginRight="15px"/>   
+         <Button
+        android:id="@+id/butRoll3"
+        android:layout_width="111px"
+        android:layout_height="32px"
+        android:background="@drawable/button3" android:layout_weight="0.0" android:layout_marginLeft="15px" android:layout_marginRight="15px"/>
+    </TableRow>
+    
+    <TableRow android:layout_height="25px" android:layout_width="match_parent" android:gravity="center" android:layout_weight="1">
+     </TableRow>
+    
+    <TableRow android:layout_width="match_parent" android:gravity="center" android:layout_weight="1" android:layout_height="0dp">
+        <Button
+        android:id="@+id/butRoll4"
+        android:layout_width="111px"
+        android:layout_height="32px"
+        android:background="@drawable/button4" android:layout_weight="0.0" android:layout_marginLeft="15px" android:layout_marginRight="15px"/>
+            <Button
+        android:id="@+id/butRoll5"
+        android:layout_width="111px"
+        android:layout_height="32px"
+        android:background="@drawable/button5" android:layout_weight="0.0" android:layout_marginLeft="15px" android:layout_marginRight="15px"/>
+            <Button
+        android:id="@+id/butRoll6"
+        android:layout_width="111px"
+        android:layout_height="32px"
+        android:background="@drawable/button6" android:layout_weight="0.0" android:layout_marginLeft="15px" android:layout_marginRight="15px"/>
+    
+     </TableRow>
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="wrap_content"
+    >
+     <TableRow android:layout_height="75px" android:layout_width="match_parent" android:gravity="center">
+     </TableRow>
+    <!-- dices -->
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+    <ImageView android:id="@+id/viewDice1" android:layout_height="46px" android:layout_width="71px" android:src="@drawable/dice" android:layout_weight="1"></ImageView>
+
+   
+    </TableRow>
+    
+    <TableRow android:layout_height="10px" android:layout_width="match_parent" android:gravity="center">
+     </TableRow>
+    
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+     </TableRow>
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="wrap_content"
+    >
+    <!-- rolled counter -->
+    <TableRow android:layout_height="75px" android:layout_width="match_parent" android:gravity="center">
+    </TableRow> 
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent">
+    <TextView android:id="@+id/txtRolled" android:text="Rolled: " android:textSize="36px" android:layout_width="150px" android:layout_height="match_parent"/>
+    <TextView android:id="@+id/txtCounter" android:text="0" android:textSize="36px" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    
+    </TableRow>
+    </LinearLayout>
+    
+     <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="wrap_content"
+    >
+    <!-- total counter -->
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent">
+    <TextView android:id="@+id/txtTotal" android:text="Total: " android:textSize="36px" android:layout_width="150px" android:layout_height="match_parent"/>
+    <TextView android:id="@+id/txtTotalCounter" android:text="0" android:textSize="36px" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </TableRow>
+    </LinearLayout>
+   
+    
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="wrap_content"
+    >
+    <!-- Output -->
+    <TableRow android:layout_height="15px" android:layout_width="match_parent" android:gravity="center">
+    </TableRow> 
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent">
+    <TextView android:id="@+id/txtOutput" android:text="" android:textSize="36px" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" />
+    </TableRow>
+    </LinearLayout>
+    
+    </TableLayout>
+    
+</LinearLayout>
